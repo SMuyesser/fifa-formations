@@ -1,10 +1,5 @@
 export const SET_FORMATION = "SET_FORMATION";
-export const setFormation = () => ({
-	type: NEW_GAME,
-	formation,
-	image,
-	strength,
-	weakness,
-	tacticss,
-	playerInstructions
+export const setFormation = (formationObj) => ({
+	type: SET_FORMATION,
+	formationObj
 });

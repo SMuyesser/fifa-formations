@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 
-import App from './App';
+import Formation from './formation';
 
 it('renders without crashing', () => {
-	shallow(<App />);
+	shallow(<Formation />);
 });
