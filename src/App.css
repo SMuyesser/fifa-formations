@@ -1,3 +1,298 @@
 .App {
   text-align: center;
 }
+
+/*******************************************************
+	MAIN
+*******************************************************/
+
+div.main {
+	background-image: url(images/backgroundmobile.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	margin: 0px;
+	font-family: 'Cantarell', sans-serif;
+}
+
+div.main h1 {
+	font-family: 'Fjalla One', sans-serif;
+	position: absolute;
+	width: 100%;
+	top: 7.5%;
+	font-size: 2.5em;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	border: 1px solid white;
+	border-left: none;
+	border-right: none;
+	color: #FFFFFF;
+	text-decoration: normal;
+	text-align: center;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	overflow: hidden;
+	white-space: pre;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #CFCECE , 0 0 30px #CFCECE , 0 0 40px #FF4200 , 0 0 70px #FF4200 , 0 0 80px #FF4200 , 0 0 100px #FF4200;
+}
+
+div.main a {
+	bottom: 7.5%;
+	font-size: 2.25em;
+	border: none;
+	color: #FFFFFF;
+	text-decoration: none;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	white-space: pre;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #00FCFF , 0 0 70px #00FCFF , 0 0 80px #0066FF , 0 0 100px #0066FF;
+	position: absolute;
+	-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+	border: 1px solid white;
+	width: 50%;
+	overflow-y: hidden;
+	height: 50px;
+	border-radius: 25px;
+}
+
+div.main a:hover {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #FF4200 , 0 0 70px #FF4200 , 0 0 80px #FF4200 , 0 0 100px #FF4200;
+	width: 100%;
+	border-radius: 0px;
+}
+
+
+
+/*******************************************************
+	FORMATION
+*******************************************************/
+
+div.formation {
+	background-image: url(images/backgroundmobile.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	margin: 0px;
+	padding-top: 50px;
+	z-index: -1;
+	color: white;
+	font-family: 'Cantarell', sans-serif;
+	overflow-y: hidden;
+}
+
+
+
+/*******************************************************
+		FORMATION-SELECTOR
+*******************************************************/
+
+div.formation-selector {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	border-bottom: 1.5px solid white;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200 , 0 0 30px #FF4200;
+	background-color: black;
+}
+
+div.formation-selector p {
+	margin: 5px auto 2px auto;
+}
+
+div.formation-selector form {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+div.formation-selector form select,
+div.formation-selector form select option {
+	background: black;
+	border: none;
+	color: white;
+	border-bottom: 1.5px solid white;
+	font-size: 1.5em;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+}
+
+div.formation-selector form select option {
+	font-size: .5em;
+}
+
+div.formation-selector form input {
+	background: none;
+	border: 1.5px solid white;
+	height: 31px;
+	color: white;
+	overflow: hidden;
+	-webkit-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+	-moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+	-o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+	transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF , 0 0 30px #00FCFF , 0 0 40px #00FCFF;
+	border-radius: 10px 10px 10px 0px;
+}
+
+div.formation-selector form input:hover {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200 , 0 0 30px #FF4200 , 0 0 40px #FF4200;
+	border-radius: 0px;
+}
+
+
+
+/*******************************************************
+		FORMATION-IMAGE
+*******************************************************/
+
+div.formationImage {
+	background-color: black;
+	width: 85%;
+	margin: 20px auto 2.5px auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+    -webkit-box-shadow: 0 5px 3px -3px #FF4200;
+       -moz-box-shadow: 0 5px 3px -3px #FF4200;
+            box-shadow: 0 5px 3px -3px #FF4200;
+}
+
+div.formationImage img {
+	border: 1.5px solid white;
+	border-radius: 10px;
+}
+
+/*******************************************************
+		PROs CONs
+*******************************************************/
+
+div.proscons {
+	background-color: black;
+	width: 85%;
+	margin: 2.5px auto;
+	display: flex;
+	justify-content: space-around;
+	font-size: .75em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+    -webkit-box-shadow: 0 5px 3px -3px #FF4200;
+       -moz-box-shadow: 0 5px 3px -3px #FF4200;
+            box-shadow: 0 5px 3px -3px #FF4200;
+}
+
+div.proscons h2 {
+	margin: 0px;
+}
+
+div.proscons ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+div.strength-container h2 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+}
+
+div.weakness-container h2 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
+}
+
+
+
+/*******************************************************
+		CUSTOM TACTICS
+*******************************************************/
+
+div.tactics {
+	background-color: black;
+	display: flex;
+	overflow: hidden;
+	width: 85%;
+	margin: 2.5px auto;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+    -webkit-box-shadow: 0 5px 3px -3px #FF4200;
+       -moz-box-shadow: 0 5px 3px -3px #FF4200;
+            box-shadow: 0 5px 3px -3px #FF4200;
+}
+
+div.tactics div.tactics-all-cat {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 5px;
+}
+
+div.tactics ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+	font-size: .6em;
+}
+
+div.tactics h2 {
+	font-size: 1em;
+	margin: 5px auto 0px auto;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+
+}
+
+div.tactics h3 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
+	font-size: .75em;
+	margin: 0px;
+}
+
+
+
+/*******************************************************
+		PLAYER INSTRUCTIONS
+*******************************************************/
+
+div.playerInstructions {
+	background-color: black;
+	display: flex;
+	overflow: hidden;
+	width: 85%;
+	margin: 2.5px auto;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+    -webkit-box-shadow: 0 5px 3px -3px #FF4200;
+       -moz-box-shadow: 0 5px 3px -3px #FF4200;
+            box-shadow: 0 5px 3px -3px #FF4200;
+}
+
+div.playerInstructions div.all-instructions {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+}
+
+div.playerInstructions ul {
+	list-style: none;
+	padding-left: 0px;
+	font-size: .55em;
+}
+
+div.playerInstructions h2 {
+	font-size: 1em;
+	margin: 5px auto 0px auto;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+
+}
+
+div.playerInstructions h3 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
+	font-size: .75em;
+	margin: 0px;
+}

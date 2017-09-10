@@ -7,25 +7,33 @@ export class PlayerInstructions extends React.Component {
 
         return (
             <div className="playerInstructions">
-            <h2>Player Instructions</h2>
-            <h3>Forwards</h3>
-            	<ul className="fwd-instructions">
-	            	{this.props.fwdInstructions.map((instructions, index) => {
-	            		return <li key={index}>{instructions}</li>
-	            	})}
-            	</ul>
-            <h3>Midfielders</h3>
-            	<ul className="mid-instructions">
-	            	{this.props.midInstructions.map((instructions, index) => {
-	            		return <li key={index}>{instructions}</li>
-	            	})}
-            	</ul>
-            <h3>Defenders</h3>
-            	<ul className="def-instructions">
-	            	{this.props.defInstructions.map((instructions, index) => {
-	            		return <li key={index}>{instructions}</li>
-	            	})}
-            	</ul>
+                <h2>Player Instructions</h2>
+                <div className="all-instructions">
+                    <div className="fwd-container">
+                        <h3>Forwards</h3>
+                    	<ul className="fwd-instructions">
+        	            	{this.props.fwdInstructions.map((instructions, index) => {
+        	            		return <li key={index}>{instructions}</li>
+        	            	})}
+                    	</ul>
+                    </div>
+                    <div className="fwd-container">
+                        <h3>Midfielders</h3>
+                    	<ul className="mid-instructions">
+        	            	{this.props.midInstructions.map((instructions, index) => {
+        	            		return <li key={index}>{instructions}</li>
+        	            	})}
+                    	</ul>
+                    </div>
+                    <div className="fwd-container">
+                        <h3>Defenders</h3>
+                    	<ul className="def-instructions">
+        	            	{this.props.defInstructions.map((instructions, index) => {
+        	            		return <li key={index}>{instructions}</li>
+        	            	})}
+                    	</ul>
+                    </div>
+                </div>
             </div>
         );
     }

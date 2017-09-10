@@ -13,7 +13,6 @@ export class Formation extends React.Component {
         return (
             <div className="formation">
             	<FormationSelector />
-            	<h1>{this.props.formation}</h1>
             	<FormationImage />
             	<ProsCons />
             	<Tactics />

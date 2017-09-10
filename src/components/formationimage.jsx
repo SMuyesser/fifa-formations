@@ -6,7 +6,7 @@ export class FormationImage extends React.Component {
     render() {
         return (
             <div className="formationImage">
-		        <img src={require('../images/'+this.props.image+'.jpg')} width={210} height={110} alt={'formation'} />
+		        <img src={require('../images/'+this.props.image+'.jpg')} width={225} height={125} alt={'formation'} />
             </div>
         );
     }
