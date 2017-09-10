@@ -19,7 +19,6 @@ const initialState = {
 	buildUpTacticsSpd: 0,
 	buildUpTacticsPass: 0,
 	buildUpTacticsPos: ''
-
 }
 
 export default function reducer(state = initialState, action) {
