@@ -10,7 +10,7 @@ export default function App(props) {
     return (
       <div className="App">
         <Route exact path="/" component={Main} />
-        <Route exact path="/formations" component={Formation} />
+        <Route exact path="/formation" component={Formation} />
       </div>
     );
 }

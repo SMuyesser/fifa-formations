@@ -9,13 +9,14 @@ export class Main extends React.Component {
         return (
             <div className="main">
                 <h1>FIFA FORMATIONS</h1>
-                <Link className="linkBtn" to="/formations" role="button" onClick={e => this.checkGameStart(e)}>Begin Game</Link>
+                <Link to="/formation">Kick Off</Link>
             </div>
         );
     }
 };
 
 const mapStateToProps = state => ({
+	formation: state.formation
 });
 
 export default connect(mapStateToProps)(Main);
