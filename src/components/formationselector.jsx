@@ -50,7 +50,7 @@ export class FormationSelector extends React.Component {
 
         return (
             <div className="formation-selector">
-                <p>Select a formation below to view.</p>
+                <p>Select a formation:</p>
 				<form className="select-formation-form-group">
 				  <select className="select-formation-form-control" id="select-one">
 				  	{formOptions}
