@@ -1,6 +1,35 @@
-import reducer from './reducers';
+import authReducer from '../reducers/auth';
+import formationsReducer from '../reducers/formations';
 
-describe('gameReducer', () => {
+describe('authReducer', () => {
+	let initialState;
+	let state;
+
+	beforeEach(() => {
+		initialState = {
+			authToken: null,
+			currentPlayer: null
+		}
+	});
+
+	it('should test reducer for SET_AUTH_TOKEN', () => {
+		state = authReducer(state, {
+			type: 'SET_AUTH_TOKEN',
+			authToken: 'token test'
+		});
+		expect(state.authToken).toEqual('token test');
+	});
+
+	it('should test reducer for SET_CURRENT_PLAYER', () => {
+		state = authReducer(state, {
+			type: 'SET_CURRENT_PLAYER',
+			currentPlayer: 'player name'
+		});
+		expect(state.currentPlayer).toEqual('player name');
+	});
+});
+
+describe('formationsReducer', () => {
 	let initialState;
 	let state;
 

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 
-import {Main} from './main';
+import {FormationSelector} from '../components/formationselector';
 
 it('renders without crashing', () => {
-	shallow(<Main />);
+	shallow(<FormationSelector />);
 });

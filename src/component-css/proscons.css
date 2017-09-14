@@ -1,0 +1,45 @@
+/*******************************************************
+		PROs CONs
+*******************************************************/
+
+div.proscons {
+	background-color: #181818;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	font-size: .75em;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	border-radius: 0px 0px 10px 10px;
+    -webkit-box-shadow: 0 5px 3px -3px #FF4200;
+       -moz-box-shadow: 0 5px 3px -3px #FF4200;
+            box-shadow: 0 5px 3px -3px #FF4200;
+}
+
+div.proscons h2 {
+	margin: 0px;
+	text-decoration: underline;
+}
+
+div.proscons ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+div.proscons ul li {
+	line-height: 1.1em;
+}
+
+div.strength-container h2 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+}
+
+div.weakness-container h2 {
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
+}
+
+/*****************************
+	PROs CONs: RESPONSIVE
+*****************************/

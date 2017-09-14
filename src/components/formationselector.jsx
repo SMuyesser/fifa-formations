@@ -3,7 +3,10 @@ import axios from 'axios';
 import {connect} from 'react-redux';
 
 import {API_BASE_URL} from '../config';
-import {setFormation} from '../actions';
+import {setFormation} from '../actions/formations';
+import FormationImage from './formationimage';
+
+import '../component-css/formationselector.css';
 
 export class FormationSelector extends React.Component {
 
@@ -50,20 +53,24 @@ export class FormationSelector extends React.Component {
 
         return (
             <div className="formation-selector">
-                <p>Select a formation:</p>
-				<form className="select-formation-form-group">
-				  <select className="select-formation-form-control" id="select-one">
-				  	{formOptions}
-				  </select>
-				    <input type="submit" onClick={e => this.setFormation(e)}></input>
-				</form>	
+            	<h1>FIFA Formations</h1>
+				<FormationImage />
+            	<div className="select-formation">
+	                <p>Select formation:</p>
+					<form className="select-formation-form-group">
+					  <select className="select-formation-form-control" id="select-one">
+					  	{formOptions}
+					  </select>
+					    <input type="submit" onClick={e => this.setFormation(e)}></input>
+					</form>	
+				</div>
             </div>
         );
     }
 };
 
 const mapStateToProps = state => ({
-	formation: state.formation
+    formation: state.formations.formation
 });
 
 export default connect(mapStateToProps)(FormationSelector);

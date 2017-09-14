@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import '../component-css/proscons.css';
+
 export class ProsCons extends React.Component {
 
     render() {
@@ -29,8 +31,8 @@ export class ProsCons extends React.Component {
 };
 
 const mapStateToProps = state => ({
-	strength: state.strength,
-	weakness: state.weakness
+	strength: state.formations.strength,
+	weakness: state.formations.weakness
 });
 
 export default connect(mapStateToProps)(ProsCons);

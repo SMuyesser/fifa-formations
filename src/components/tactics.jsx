@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import '../component-css/tactics.css';
+
 export class Tactics extends React.Component {
 
     render() {
@@ -42,17 +44,17 @@ export class Tactics extends React.Component {
 };
 
 const mapStateToProps = state => ({
-	defTacticsPress: state.defTacticsPress,
-	defTacticsAggr: state.defTacticsAggr,
-	defTacticsWidth: state.defTacticsWidth,
-	defTacticsLine: state.defTacticsLine,
-	ccTacticsPass: state.ccTacticsPass,
-	ccTacticsShoot: state.ccTacticsShoot,
-	ccTacticsCross: state.ccTacticsCross,
-	ccTacticsPos: state.ccTacticsPos,
-	buildUpTacticsSpd: state.buildUpTacticsSpd,
-	buildUpTacticsPass: state.buildUpTacticsPass,
-	buildUpTacticsPos: state.buildUpTacticsPos
+	defTacticsPress: state.formations.defTacticsPress,
+	defTacticsAggr: state.formations.defTacticsAggr,
+	defTacticsWidth: state.formations.defTacticsWidth,
+	defTacticsLine: state.formations.defTacticsLine,
+	ccTacticsPass: state.formations.ccTacticsPass,
+	ccTacticsShoot: state.formations.ccTacticsShoot,
+	ccTacticsCross: state.formations.ccTacticsCross,
+	ccTacticsPos: state.formations.ccTacticsPos,
+	buildUpTacticsSpd: state.formations.buildUpTacticsSpd,
+	buildUpTacticsPass: state.formations.buildUpTacticsPass,
+	buildUpTacticsPos: state.formations.buildUpTacticsPos
 });
 
 export default connect(mapStateToProps)(Tactics);

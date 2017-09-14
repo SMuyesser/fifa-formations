@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 
-import {FormationImage} from './formationimage';
+import {ProsCons} from '../components/proscons';
 
 it('renders without crashing', () => {
-	shallow(<FormationImage image={433} />);
+	shallow(<ProsCons strength={[1,2,3]} weakness={[1,2,3]} />);
 });

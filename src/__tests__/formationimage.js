@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {shallow} from 'enzyme';
 
-import {Tactics} from './tactics';
+import {FormationImage} from '../components/formationimage';
 
 it('renders without crashing', () => {
-	shallow(<Tactics />);
+	shallow(<FormationImage image={433} />);
 });

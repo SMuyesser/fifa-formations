@@ -1,4 +1,4 @@
-import {SET_FORMATION} from './actions';
+import {SET_FORMATION} from '../actions/formations';
 
 const initialState = {
 	formation: '',
@@ -43,7 +43,8 @@ export default function reducer(state = initialState, action) {
 			buildUpTacticsPass: action.buildUpTacticsPass,
 			buildUpTacticsPos: action.buildUpTacticsPos
 		});
-	} else {
+   	} else {
 		return state;
 	}
 };
+
