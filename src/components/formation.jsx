@@ -38,12 +38,14 @@ export class Formations extends React.Component {
         return (
             <div className="formation">
                 <FormationSelector />
-                <div className="tactics-instr-combo">
-                    <Tactics />
-                    <PlayerInstructions />
+                <div className="landscape-resp-fix">
+                    <div className="tactics-instr-combo">
+                        <Tactics />
+                        <PlayerInstructions />
+                    </div>
+                    <ProsCons />
+                    {logOutButton}
                 </div>
-                <ProsCons />
-                {logOutButton}
             </div>
         );
     }

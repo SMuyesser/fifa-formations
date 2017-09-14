@@ -56,3 +56,8 @@ div.tactics h3 {
 /*****************************
 	TACTICS: RESPONSIVE
 *****************************/
+@media screen and (min-width: 1024px) {
+	div.tactics {
+		border-radius: 10px 0px 0px 0px;
+	}
+}

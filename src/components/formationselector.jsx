@@ -19,6 +19,19 @@ export class FormationSelector extends React.Component {
 
 	//when component mounts gets all formation names and adds to local state options
 	componentDidMount() {
+		let selectForm = document.getElementById('select-formation');
+		setTimeout(() => {
+			selectForm.className = 'select-formation highlight';
+		}, 1000)
+		setTimeout(() => {
+			selectForm.className = 'select-formation highlight2';
+		}, 2000)
+		setTimeout(() => {
+			selectForm.className = 'select-formation highlight';
+		}, 3000)
+		setTimeout(() => {
+			selectForm.className = 'select-formation highlight2';
+		}, 4000)
 		const component = this;
 		axios.get(`${API_BASE_URL}/formations`)
 		.then(response => {
@@ -33,6 +46,8 @@ export class FormationSelector extends React.Component {
 	//dispatches the formation that is selected
 	setFormation(event) {
 		event.preventDefault();
+		let selectForm = document.getElementById('select-formation');
+		selectForm.className = 'select-formation';
 		const selectedFormation = document.getElementById('select-one').value;
 		axios.get(`${API_BASE_URL}/formations/${selectedFormation}`)
 		.then(response => {
@@ -55,7 +70,7 @@ export class FormationSelector extends React.Component {
             <div className="formation-selector">
             	<h1>FIFA Formations</h1>
 				<FormationImage />
-            	<div className="select-formation">
+            	<div className="select-formation" id="select-formation">
 	                <p>Select formation:</p>
 					<form className="select-formation-form-group">
 					  <select className="select-formation-form-control" id="select-one">

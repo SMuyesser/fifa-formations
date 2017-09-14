@@ -40,8 +40,9 @@ export class Main extends React.Component {
     if(this.state.formType === 'welcome') {
         form = (
           <div className="welcome">
-            <h2>Welcome Instructions Here</h2>
-            <Link id="login-link" to="/" onClick={() => this.setFormToLogin()}>Login</Link>
+            <h2>Welcome!</h2>
+            <p>Fifa has been my favorite video game for over a decade.   This app is a helpful strategy guide for each Fifa Ultimate Team formation.  It is a quick, simple, and easy to use way of setting up your team to win more games.  All information was obtained from various online resources with some personal tweaks, but I do not take any credit.  Once logged in, just select a formation from the dropdown and click submit.</p>
+            <Link id="start-link" to="/" onClick={() => this.setFormToLogin()}>Start</Link>
           </div>
         )
     //show register form
@@ -58,14 +59,14 @@ export class Main extends React.Component {
             <div className="form-container">
                 <LoginForm />
                 <Link id="register-link" to="/" onClick={() => this.setFormToRegister()}>Register New Player</Link>
-                <p id="demo-info">Demo Player: DemoPlayer | Password: Demo1234</p>
+                <p id="demo-info">Demo = Player: DemoPlayer | Password: Demo1234</p>
             </div>
         )
     }
 
     return (
         <div className="main">
-            <h1>FIFA FORMATIONS</h1>
+            <h1 id="main-title">FIFA FORMATIONS</h1>
             {form}
         </div>
     );

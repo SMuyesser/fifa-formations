@@ -14,11 +14,11 @@ div.main {
 	font-family: 'Cantarell', sans-serif;
 }
 
-div.main h1 {
+div.main h1#main-title {
 	font-family: 'Fjalla One', sans-serif;
 	position: absolute;
 	width: 100%;
-	top: 7.5%;
+	top: 10px;
 	font-size: 2.5em;
 	margin-top: 0px;
 	margin-bottom: 5px;
@@ -37,6 +37,7 @@ div.main h1 {
 
 div.main a {
 	bottom: 5%;
+	left: 25%;
 	font-size: 2.25em;
 	border: none;
 	color: #FFFFFF;
@@ -51,15 +52,40 @@ div.main a {
 	-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 	transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 	border: 1px solid white;
-	width: 165px;
+	width: 160px;
 	overflow-y: hidden;
 	border-radius: 25px;
 }
 
 div.main a:hover {
 	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #FF4200 , 0 0 70px #FF4200 , 0 0 80px #FF4200 , 0 0 100px #FF4200;
-	width: 100%;
 	border-radius: 0px;
+}
+
+div.welcome {
+	width: 100%;
+	border-top: 1.5px solid white;
+	border-bottom: 1.5px solid white;
+	background-color:rgba(0, 0, 0, 0.75);
+	margin-top: 20px;
+}
+
+div.main div.welcome p {
+	margin: 2px auto;
+	line-height: 1em;
+}
+
+div.main div.welcome p,
+div.main div.welcome h2 {
+	color: white;
+	margin: 1px auto;
+}
+
+div.main p {
+	padding: 10px;
+	margin: 20px auto;
+	color: white;
+	text-shadow: 0 0 10px black , 0 0 20px #02BBBD;
 }
 
 /******************************************************
@@ -68,20 +94,25 @@ div.main a:hover {
 
 #login-form {
 	background-color:rgba(0, 0, 0, 0.75);
-	margin-bottom: 10px;
+	margin: 20px auto;
     -webkit-box-shadow: 0 10px 6px -6px #444444;
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 70%;
     border-radius: 10px;
     padding: 10px;
     border: 1.5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: white;
+    overflow: hidden;
 }
 
 h1.form-title {
 	font-weight: lighter;
+	margin: 10px auto;
+	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #00FCFF , 0 0 70px #00FCFF , 0 0 80px #0066FF , 0 0 100px #0066FF;
 }
 
 label.login-form-label {
@@ -95,7 +126,7 @@ label.login-form-label {
 	align-content: center;
 	align-items: center;
 	margin: 2px auto 5px auto;
-	width: 100%;
+	width: 95%;
 	flex-direction: column;
 	padding: 0 10px;
 }
@@ -137,7 +168,7 @@ div.form-warning {
 #login-form-btn {
 	background-color:rgba(0, 0, 0, 0.6);
 	color: white;
-	font-size: 20px;
+	font-size: 1em;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
 	border: 1.5px solid white;
@@ -147,28 +178,45 @@ div.form-warning {
     -webkit-transition: all .4s;
     transition: all .4s;
 	border-radius: 10px;
+	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #02BBBD;
 }
 
 #login-form-btn:hover {
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
+	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
 }
 
+#register-link,
+#login-link,
+#start-link {
+	font-size: 1em;
+	position: static;
+	bottom: auto;
+	left: auto;
+	background-color: black;
+	padding: 10px;
+}
 
+#start-link {
+	font-size: 2em;
+	padding: 10px 30px;
+	position: relative;
+	top: 20px;
+}
 
 form.register-form {
 	background-color:rgba(0, 0, 0, 0.75);
-	margin-bottom: 10px;
+	margin: 70px auto 20px auto;
     -webkit-box-shadow: 0 10px 6px -6px #444444;
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
     width: 60%;
-    margin-right: auto;
-    margin-left: auto;
     border-radius: 10px;
     padding: 0px 20px;
     border: 1.5px solid white;
+    color: white;
 }
 
 /* containers for each input and label */
@@ -216,24 +264,24 @@ form.register-form span {
 
 #register-btn-container {
 	flex-direction: row;
-	align-items: center;
-	width: 50%;
+	justify-content: space-around;
+	width: 100%;
 }
 
 #register-form-submit-btn,
 #register-form-clear-btn {
 	background-color:rgba(0, 0, 0, 0.6);
 	color: white;
-	font-size: 20px;
+	font-size: 1em;
 	padding: 10px 20px 10px 20px;
-	text-decoration: none;
 	border: 1.5px solid white;
-	margin: 10px auto;
+	margin: 10px 2px;
 	-moz-transition: all .4s;
     -o-transition: all .4s;
     -webkit-transition: all .4s;
     transition: all .4s;
     border-radius: 10px;
+	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #02BBBD;
 }
 
 #register-form-submit-btn:hover,
@@ -241,8 +289,59 @@ form.register-form span {
 	-webkit-border-radius: 28;
 	-moz-border-radius: 28;
 	border-radius: 28px;
+	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
 }
 
 /*****************************
 	MAIN: RESPONSIVE
 *****************************/
+
+@media screen and (min-width: 500px) {
+
+	div.main {
+		background-image: url('../images/background desktop.jpg');
+	}
+
+	#login-form,
+	form.register-form {
+		display: block;
+		line-height: 1em;
+		margin: 85px auto 10px auto;
+		padding: 0px;
+	}
+
+	form.register-form {
+		margin: 50px auto 10px auto;
+		font-size: .5em;
+	}
+
+	form.register-form div {
+		width: 90%;
+		margin-top: 1px;
+		margin-bottom: 1px;
+	}
+
+	#login-form button {
+		margin: 2px auto;
+	}
+
+	#register-link {
+		font-size: .8em;
+	}
+
+	#login-link {
+		margin: 30px auto 10px auto;
+		font-size: .8em;
+	}
+
+	#demo-info {
+		margin: 7px;
+		font-size: .8em;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	form.register-form {
+		font-size: 1em;
+	}
+}

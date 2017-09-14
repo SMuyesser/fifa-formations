@@ -52,3 +52,9 @@ div.playerInstructions h3 {
 /*****************************
 	PlAYER INSTR: RESPONSIVE
 *****************************/
+
+@media screen and (min-width: 1024px) {
+	div.playerInstructions {
+		border-radius: 0px 10px 0px 0px;
+	}
+}
