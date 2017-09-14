@@ -4,8 +4,6 @@ import {Link, Redirect} from 'react-router-dom';
 
 import LoginForm from '../components/login-form';
 import RegistrationForm from '../components/registration-form';
-import {setCurrentPlayer, setAuthToken} from '../actions/auth';
-import {clearAuthToken} from '../local-storage';
 
 import '../component-css/main.css';
 
