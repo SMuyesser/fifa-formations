@@ -56,7 +56,7 @@ describe('formationsReducer', () => {
 		}
 	});
 
-	it('should test reducer for SET_SCORES', () => {
+	it('should test reducer', () => {
 		state = initialState;
 			const formation = {
 				"formation": "4-2-3-1(2)",
@@ -103,7 +103,7 @@ describe('formationsReducer', () => {
 					"Strong Defence"
 				]
 			};
-		state = reducer(state, {
+		state = formationsReducer(state, {
 			type: 'SET_FORMATION',
 			formation: formation
 		});
