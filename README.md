@@ -1,4 +1,4 @@
-<h1>The Movie Game</h1>
+<h1>Fifa Formations</h1>
 
 <h2>Summary</h2>
 <p><a href="https://fifaformations.netlify.com">Fifa Formations</a> is an easy to use quick reference quide for FIFA FUT formations.</p>
