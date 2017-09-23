@@ -6,7 +6,11 @@ import {required, nonEmpty} from '../validators';
 
 export class LoginForm extends React.Component {
     onSubmit(values) {
-        return this.props.dispatch(login(values.playername, values.password));
+        return this.props.dispatch(login(values.playername, values.password))
+        .then(() => {
+            const loader = document.getElementById("loader");
+            loader.className -= "hidden";
+        })
     }
 
     render() {
@@ -45,6 +49,9 @@ export class LoginForm extends React.Component {
                 <button id="login-form-btn" disabled={this.props.pristine || this.props.submitting}>
                     Log in
                 </button>
+                <div id="loader" className="hidden">
+                    <img src={require('../images/ajax-loader.gif')} alt="loader" />
+                </div>
             </form>
         );
     }

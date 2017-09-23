@@ -27,6 +27,7 @@ div.tactics ul {
 	list-style: none;
 	padding-left: 0px;
 	margin: 0px;
+	margin-bottom: 2.5px;
 	font-size: .6em;
 }
 
@@ -44,7 +45,6 @@ div.tactics h2 {
 }
 
 div.tactics h3 {
-	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
 	font-size: .75em;
 	margin: 0px;
 	width: 100%;

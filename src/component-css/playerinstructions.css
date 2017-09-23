@@ -40,9 +40,8 @@ div.playerInstructions h2 {
 }
 
 div.playerInstructions h3 {
-	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF;
 	font-size: .75em;
-	margin: 0px;
+	margin: 5px auto;
 	width: 100%;
 	background-color: black;
 	border-bottom: 1.5px solid #292929;

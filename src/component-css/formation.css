@@ -31,7 +31,6 @@ button#logout {
 	-moz-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
 	-o-transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
 	transition: all 400ms cubic-bezier(0.42, 0, 0.58, 1);
-	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #00FCFF , 0 0 30px #00FCFF , 0 0 40px #00FCFF;
 	border-radius: 10px 10px 10px 10px;
 	margin-top: 6px;
 	margin-bottom: 5px;

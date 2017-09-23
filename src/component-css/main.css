@@ -73,6 +73,8 @@ div.welcome {
 div.main div.welcome p {
 	margin: 2px auto;
 	line-height: 1em;
+	padding-left: 7px;
+	padding-right: 7px;
 }
 
 div.main div.welcome p,
@@ -99,6 +101,7 @@ div.main p {
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
     width: 70%;
+    max-width: 500px;
     border-radius: 10px;
     padding: 10px;
     border: 1.5px solid white;
@@ -109,9 +112,21 @@ div.main p {
     overflow: hidden;
 }
 
+@-webkit-keyframes autofill {
+    to {
+        color: #FFF;
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
 h1.form-title {
 	font-weight: lighter;
-	margin: 10px auto;
+	margin: 10px auto 15px auto;
 	text-shadow: 0 0 10px #FFFFFF , 0 0 20px #FFFFFF , 0 0 30px #FFFFFF , 0 0 40px #00FCFF , 0 0 70px #00FCFF , 0 0 80px #0066FF , 0 0 100px #0066FF;
 }
 
@@ -186,6 +201,11 @@ div.form-warning {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+	cursor: pointer;
+}
+
+div#loader {
+	display: none;
 }
 
 #register-link,
@@ -213,6 +233,7 @@ form.register-form {
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
     width: 60%;
+    max-width: 500px;
     border-radius: 10px;
     padding: 0px 20px;
     border: 1.5px solid white;
@@ -290,6 +311,7 @@ form.register-form span {
 	-moz-border-radius: 28;
 	border-radius: 28px;
 	box-shadow: 0 0 10px #FFFFFF , 0 0 20px #FF4200;
+	cursor: pointer;
 }
 
 /*****************************
@@ -308,6 +330,11 @@ form.register-form span {
 		line-height: 1em;
 		margin: 85px auto 10px auto;
 		padding: 0px;
+	}
+
+	#login-form input,
+	form.register-form input {
+		max-width: 300px;
 	}
 
 	form.register-form {
@@ -343,5 +370,10 @@ form.register-form span {
 @media screen and (min-width: 650px) {
 	form.register-form {
 		font-size: 1em;
+	}
+
+	div.main div.welcome {
+		width: 60%;
+		margin: auto;
 	}
 }
