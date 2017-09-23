@@ -1,9 +1,7 @@
-<h1>The Movie Game</h1>
+<h1>Fifa Formations</h1>
 
 <h2>Summary</h2>
-<p><a href="https://fifaformations.netlify.com">Fifa Formations</a> is an easy to use quick reference quide for FIFA FUT formations.</p>
-<p>I have been playing FIFA for over a decade and wanted to make something that incorporated it.  This helps you to set up your team with ease and get more wins</p>
-<p>The information was found from popular FIFA youtubers like Ovvy, Dirty Mike, DMG and I tweaked some as well.</p>
+<p>Fifa has been my favorite video game for over a decade.  <a href="https://fifaformations.netlify.com">Fifa Formations</a> is a helpful strategy guide for each Fifa Ultimate Team formation.  It is a quick, simple, and easy to use way of setting up your team to win more games.  All information was obtained from various online resources with some personal tweaks, but I do not take any credit.</p>
 
 
 <h2>API</h2>
