@@ -6,11 +6,10 @@ import {required, nonEmpty} from '../validators';
 
 export class LoginForm extends React.Component {
     onSubmit(values) {
-        return this.props.dispatch(login(values.playername, values.password))
-        .then(() => {
-            const loader = document.getElementById("loader");
-            loader.className -= "hidden";
-        })
+        this.props.dispatch(login(values.playername, values.password));
+        const loader = document.getElementById("loader");
+        console.log(loader);
+        return loader.className = "";
     }
 
     render() {

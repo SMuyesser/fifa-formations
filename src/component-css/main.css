@@ -204,7 +204,7 @@ div.form-warning {
 	cursor: pointer;
 }
 
-div#loader {
+div#loader.hidden {
 	display: none;
 }
 
