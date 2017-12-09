@@ -240,6 +240,7 @@ div#loader.hidden {
     -moz-box-shadow: 0 10px 6px -6px #444444;
     box-shadow: 0 10px 6px -6px #444444;
     font-size: 15px;
+    padding: 10px 20px;
 }
 
 form.register-form {
@@ -362,5 +363,20 @@ form.register-form span {
 		background-image: url('../images/fifa-background.jpg');
 		overflow-y: auto;
 		vertical-align: middle;	
+	}
+
+	div.welcome {
+		width: 50%;
+	}
+
+	div.main div#main-title {
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+	} 
+
+	form#login-form,
+	form.register-form {
+		width: 50%;
 	}
 }

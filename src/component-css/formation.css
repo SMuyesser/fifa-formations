@@ -36,7 +36,7 @@ button#logout {
   font-family: Arial;
   color: #FFFFFF;
   font-size: 15px;
-  padding: 5px;
+  padding: 5px 10px;
   text-decoration: none;
   margin: 10px auto 20px auto;
   border: none;
@@ -86,31 +86,14 @@ button#logout:hover {
 }
 
 
-@media screen and (min-width: 475px) and (max-width: 749px) {
+@media screen and (min-width: 475px) {
 
 	div.formation {
 		background-image: url('../images/fifa-background-mobile-large.png');
-		display: flex;
-		align-items: center;
-		height: 100vh;
-	}
-	
-	div.formation div.tactics-instr-combo {
-		width: 70%;
-		margin: 0px;
-		font-size: .69em;
-		position: absolute;
-		top: -3px;
-		left: 155px;
 	}
 
-	button#logout {
-		position: absolute;
-		z-index: 10px;
-		left: 4px;
-		bottom: 10px;
-		font-size: .6em;
-		height: 30px;
+	div.formation div.tactics-instr-combo {
+		margin-top: 185px;
 	}
 }
 
@@ -128,7 +111,7 @@ button#logout:hover {
 	}
 
 	div.formation div.tactics-instr-combo {
-		margin-top: 365px;
+		margin-top: 375px;
 	}
 }
 
@@ -136,28 +119,15 @@ button#logout:hover {
 
 	div.formation {
 		background-image: url('../images/fifa-background.jpg');
-		display: flex;
-		align-items: center;
 		height: 100vh;
+		margin: auto;
 	}
 	
 	div.formation div.tactics-instr-combo {
 		width: 59%;
-		margin: 0px;
-		font-size: 1.25em;
-		position: absolute;
-		top: 15px;
-		left: 410px;
-		border-radius: 10px 10px 0px 0px;
+		margin-top: 195px;
 	}
 
-	button#logout {
-		position: absolute;
-		z-index: 10px;
-		left: 25px;
-		bottom: 10px;
-		font-size: 1.25em;
-	}
 }
 
 @media screen and (min-width: 1250px) {

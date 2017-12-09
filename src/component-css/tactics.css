@@ -58,5 +58,6 @@ div.tactics h3 {
 @media screen and (min-width: 1024px) {
 	div.tactics {
 		border-radius: 10px 0px 0px 0px;
+		border-right: 1px solid #2be400;
 	}
 }

@@ -149,76 +149,40 @@ div.select-formation p {
 	div.formation-selector {
 		font-size: .6em;
 	}
+
 }
 
-@media screen and (min-width: 475px) and (max-width: 749px) {
-	
-	div.formation-selector {
-		width: 150px;
-		height: 100%;
-		top: auto;
-		left: 0px;
-		border-radius: 0px 10px 10px 0px;
-	}
-
-	div.formation-selector h1 {
-		line-height: 1em;
-	}
-
-	div.formation-selector div.select-formation {
-		flex-direction: column;
-		max-width: 150px;
-		font-size: .75em;
-	}
-
-	div.formation-selector div.select-formation form {
-		flex-direction: column;
-		font-size: 1.35em;
-	}
-
-	div.formation-selector form input {
-		border-radius: 10px;
-		margin-top: 10px;
-		height: 45px;
-		font-size: 2em;
-	}
-}
 
 @media screen and (min-width: 750px) {
 	
 	div.formation-selector {
 		font-size: .8em;
 	}
+
+	div.select-formation form select {
+		width: 200px;
+		height: 1.15em;
+	}
 }
 
 @media screen and (min-width: 1024px) {
+
 	div.formation-selector {
-		width: 400px;
-		height: 100%;
-		top: auto;
-		left: 0px;
-		border-radius: 0px 10px 10px 0px;
+		display: flex;
+		justify-content: space-between;
+		height: 200px;
 	}
 
-	div.formation-selector h1 {
-		line-height: 1em;
+	div.formation-selector div#main-title {
+		padding: 20px;
+		text-align: left;
+		max-width: 310px;
 	}
 
-	div.formation-selector div.select-formation {
+	div.select-formation {
 		flex-direction: column;
-		max-width: 380px;
-		font-size: 1.25em;
-		margin-top: 30px;
+		margin-right: 5px;
+		margin-left: auto;
 	}
 
-	div.formation-selector div.select-formation form {
-		flex-direction: column;
-		font-size: 1.35em;
-	}
-
-	div.formation-selector form input {
-		border-radius: 10px;
-		margin-top: 20px;
-		font-size: 1.75em;
-	}
 }
