@@ -49,7 +49,6 @@ ul.weakness-list li:first-letter {
 
 @media screen and (min-width: 650px) and (max-width: 749px) {
 	div.proscons {
-		width: 75%;
 		top: 276px;
 	}
 }

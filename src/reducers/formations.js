@@ -1,4 +1,4 @@
-import {SET_FORMATION} from '../actions/formations';
+import {SET_FORMATION, HELP_TOGGLE} from '../actions/formations';
 
 const initialState = {
 	formation: '',
@@ -18,7 +18,8 @@ const initialState = {
 	ccTacticsPos: '',
 	buildUpTacticsSpd: 0,
 	buildUpTacticsPass: 0,
-	buildUpTacticsPos: ''
+	buildUpTacticsPos: '',
+	helpToggle: 'off'
 }
 
 export default function reducer(state = initialState, action) {
@@ -42,6 +43,10 @@ export default function reducer(state = initialState, action) {
 			buildUpTacticsSpd: action.buildUpTacticsSpd,
 			buildUpTacticsPass: action.buildUpTacticsPass,
 			buildUpTacticsPos: action.buildUpTacticsPos
+		});
+	} else if(action.type === HELP_TOGGLE) {
+		return Object.assign({}, state, {
+			helpToggle: action.helpToggle
 		});
    	} else {
 		return state;

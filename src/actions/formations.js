@@ -20,3 +20,9 @@ export const setFormation = (formationObj) => ({
     buildUpTacticsPass: formationObj.tactics.buildUp.passing,
     buildUpTacticsPos: formationObj.tactics.buildUp.positioning
 });
+
+export const HELP_TOGGLE = "HELP_TOGGLE";
+export const helpToggle = helpOnOFF => ({
+    type: HELP_TOGGLE,
+    helpToggle: helpOnOFF
+});

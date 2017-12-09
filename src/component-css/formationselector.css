@@ -108,6 +108,23 @@ div.select-formation p {
 	color: #2be400;
 }
 
+button#help-btn {
+	background: none;
+	border: none;
+	color: #2be400;
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: bolder;
+	font-size: 1.5em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+button#help-btn:hover {
+	cursor: pointer;
+	color: #A9F996;
+}
+
 
 
 /*****************************

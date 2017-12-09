@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 
+import Help from './help';
 import FormationSelector from './formationselector';
 import ProsCons from './proscons';
 import Tactics from './tactics';
@@ -35,17 +36,33 @@ export class Formations extends React.Component {
             );
         }
 
-        return (
-            <div className="formation">
-                <FormationSelector />
-                <div className="landscape-resp-fix">
+        let display;
+        //show normal display
+        if(this.props.helpToggle === 'off') {
+            display = (
+                <div>
                     <div className="tactics-instr-combo">
                         <Tactics />
                         <PlayerInstructions />
                     </div>
                     <ProsCons />
-                    {logOutButton}
                 </div>
+            );
+        //show help
+        } else {
+            display = (
+                <div>
+                    <Help />
+                </div>
+            )
+        }
+    
+
+        return (
+            <div className="formation">
+                <FormationSelector />
+                {display}
+                {logOutButton}
             </div>
         );
     }
@@ -56,7 +73,8 @@ const mapStateToProps = state => {
     return {
         loggedIn: currentPlayer !== null,
         playername: currentPlayer ? state.auth.currentPlayer.playername : '',
-    	formation: state.formations.formation
+    	formation: state.formations.formation,
+        helpToggle: state.formations.helpToggle
     };
 };
 

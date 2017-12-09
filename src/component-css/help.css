@@ -1,0 +1,16 @@
+/*******************************************************
+	HELP
+*******************************************************/
+
+div.help {
+	background-color: #181818;
+	margin: 215px auto 0 auto;
+	width: 80%;
+	border-bottom: 1.5px solid #2be400;
+	padding: 10px;
+	text-align: left;
+}
+
+div.help h2 {
+	margin-top: 5px;
+}

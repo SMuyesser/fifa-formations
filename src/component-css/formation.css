@@ -93,14 +93,7 @@ button#logout:hover {
 	}
 
 	div.formation div.tactics-instr-combo {
-		margin-top: 185px;
-	}
-}
-
-@media screen and (min-width: 650px) and (max-width: 749px) {
-	div.formation div.tactics-instr-combo {
-		width: 75%;
-		font-size: .8em
+		margin-top: 205px;
 	}
 }
 

@@ -3,7 +3,7 @@ import axios from 'axios';
 import {connect} from 'react-redux';
 
 import {API_BASE_URL} from '../config';
-import {setFormation} from '../actions/formations';
+import {setFormation, helpToggle} from '../actions/formations';
 import FormationImage from './formationimage';
 
 import '../component-css/formationselector.css';
@@ -58,6 +58,15 @@ export class FormationSelector extends React.Component {
 		})
 	}
 
+	//toggle help screen
+	toggle(event) {
+		if(this.props.helpToggle === 'off') {
+			this.props.dispatch(helpToggle('on'));
+		} else {
+			this.props.dispatch(helpToggle('off'));
+		}
+	};
+
     render() {
 
     	//gets formations name from local state to be used as form options
@@ -79,13 +88,15 @@ export class FormationSelector extends React.Component {
 					</form>	
 				</div>
 				<FormationImage />
+				<button id="help-btn" onClick={e => this.toggle(e)}>?</button>
             </div>
         );
     }
 };
 
 const mapStateToProps = state => ({
-    formation: state.formations.formation
+    formation: state.formations.formation,
+    helpToggle: state.formations.helpToggle
 });
 
 export default connect(mapStateToProps)(FormationSelector);

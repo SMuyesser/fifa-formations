@@ -12,15 +12,6 @@ div.formationImage img {
 	FORM-IMG: RESPONSIVE
 *****************************/
 
-@media screen and (min-width: 475px) and (max-width: 749px) {
-
-	div.formationImage img {
-		width: 130px;
-		height: 80px;
-	}
-
-}
-
 @media screen and (min-width: 750px) {
 	
 	div.formationImage img {
