@@ -6,11 +6,10 @@
 
 <h2>API</h2>
 <p>Fifa formations uses an original api retrieving data from a mongo database that I created.</p>
-<p>The api can be found<a href="https://github.com/SMuyesser/fifaformations-api"> here</a>.</p>
+<p>The api can be found<a href="https://github.com/SMuyesser/fifa-formations-api"> here</a>.</p>
 
 <h2>Images</h2>
 <p float="left">
-  <img src="./src/images/landing.png" height="295">
   <img src="./src/images/game.png" height="295">
 </p>
 
