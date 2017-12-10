@@ -3,14 +3,112 @@
 *******************************************************/
 
 div.help {
-	background-color: #181818;
+	background-color:rgba(0, 0, 0, 0.75);
 	margin: 215px auto 0 auto;
-	width: 80%;
+	width: 90%;
 	border-bottom: 1.5px solid #2be400;
 	padding: 10px;
 	text-align: left;
+	font-size: 12px;
+	font-family: 'Fjalla One', sans-serif;
+	border-radius: 0px 0px 15px 15px;
+	    -webkit-box-shadow: 0 5px 3px -3px #313131;
+       -moz-box-shadow: 0 5px 3px -3px #313131;
+            box-shadow: 0 5px 3px -3px #313131;
 }
 
 div.help h2 {
-	margin-top: 5px;
+	color: #2be400;
+	font-size: 2em;
+	text-align: center;
+	margin: 5px auto;
+}
+
+div.help p#help-info {
+	text-align: center;
+	margin-top: 10px;
+}
+
+ul#contents-list {
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+div.help h3 {
+	color: #2be400;
+	margin-bottom: 5px;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+ul#abbreviation-list {
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 10px;
+}
+
+div#custom-tactics-help p.header {
+	margin-bottom: 0px;
+	color: #2be400;
+	font-size: 1.25em;
+}
+
+div.help h4 {
+	color: #2be400;
+	font-size: 1.25em;
+	text-decoration: underline;
+	margin-bottom: 5px;
+}
+
+
+
+/*****************************
+	HELP:; RESPONSIVE
+*****************************/
+@media screen and (min-width: 360px) {
+
+	div.help {
+		margin-top: 220px;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	
+	div.help {
+		margin-top: 205px;
+	}
+}
+
+
+@media screen and (min-width: 475px) {
+
+	div.help {
+		margin-top: 205px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+
+	div.help {
+		margin-top: 375px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	div.help {
+		font-size: .75em;
+		line-height: 1.5em;
+		margin-top: 200px;
+	}
+
+	div.help h2 {
+		margin: 20px auto;
+	}
+
+	div.help p#help-info {
+		max-width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
 }

@@ -194,6 +194,8 @@ button#help-btn:hover {
 		padding: 20px;
 		text-align: left;
 		max-width: 310px;
+		border: none;
+		border-radius: 0px 0px 0px 15px;
 	}
 
 	div.select-formation {
